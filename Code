@@ -1,0 +1,47 @@
+baris_a = int(input("Masukkan baris a: "))
+kolom_a = int(input("Masukkan kolom a: "))
+
+baris_b = int(input("Masukkan baris b: "))
+kolom_b = int(input("Masukkan kolom b: "))
+
+if (kolom_a != baris_b):
+    print("Matriks a dan b tidak dapat dikallikan!")
+else:
+    print("Matriks a dan b dapat di kalikan")
+    a = []
+    for i in range(baris_a):
+        baris = []
+        for j in range(kolom_a):
+            value = int(input("Masukkan elemen matriks a: "))
+            baris.append(value)
+        a.append(baris)
+
+    b = []
+    for i in range(baris_b):
+        baris = []
+        for j in range(kolom_b):
+            value = int(input("Masukkan elemen matriks b: "))
+            baris.append(value)
+        b.append(baris)
+    print(f"Matriks a: {a}")
+    print(f"Matriks b: {b}")
+
+
+
+PS C:\Users\LENOVO\Pictures\Media Madian\Madian\python>
+py matriks_input.py 
+Masukkan baris a: 2
+Masukkan kolom a: 2
+Masukkan baris b: 2
+Masukkan kolom b: 2
+Matriks a dan b dapat di kalikan
+Masukkan elemen matriks a: 1
+Masukkan elemen matriks a: 2
+Masukkan elemen matriks a: 3
+Masukkan elemen matriks a: 1
+Masukkan elemen matriks b: 2
+Masukkan elemen matriks b: 3
+Masukkan elemen matriks b: 1
+Masukkan elemen matriks b: 2
+Matriks a: [[1, 2], [3, 1]]
+Matriks b: [[2, 3], [1, 2]]
